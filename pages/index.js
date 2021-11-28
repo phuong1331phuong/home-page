@@ -4,7 +4,7 @@ const HomePage = () => {
   return(
     <Container>
       <Box borderRadius="lg" bg="red" p={3} mb={6} align='center'>
-        <Text style={{fontFamily: 'Comforter, cursive',}}>Hello, World!</Text>
+        <Text >I'm student of KMA</Text>
       </Box>
     </Container>
   )

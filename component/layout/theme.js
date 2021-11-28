@@ -6,10 +6,15 @@ import { extendTheme } from "@chakra-ui/react"
 // 2. Add your color mode config
 const config = {
   initialColorMode: "dark",
-  useSystemColorMode: false,
+  useSystemColorMode: true,
 }
 
+const fonts= {
+    body: "Signika , sans-serif",
+    heading: "Yellowtail, cursive",
+  }
+
 // 3. extend the theme
-const theme = extendTheme({ config })
+const theme = extendTheme({ config, fonts })
 
 export default theme
