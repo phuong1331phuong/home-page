@@ -1,5 +1,4 @@
-import { Box, Heading, ListItem, UnorderedList } from "@chakra-ui/layout"
-
+import { Box, Heading, Text, ListItem, UnorderedList } from "@chakra-ui/layout"
 
 const Target = () => {
 
@@ -11,6 +10,10 @@ const Target = () => {
       </Heading>
       <UnorderedList>
         <ListItem>
+          Short-term:
+          <Text>I am a student at cryptographic engineering academy majoring in electronics and telecommunications. Also, I'm a freelancer (web developer). To develop myself and improve my knowledge, I am looking for an IoT developer internship.</Text>
+        </ListItem>
+        <ListItem>
           Long-term:
           <UnorderedList>
             <ListItem>
@@ -21,20 +24,6 @@ const Target = () => {
             </ListItem>
             <ListItem>
               Complete myself
-            </ListItem>
-          </UnorderedList>
-        </ListItem>
-        <ListItem>
-          Short-term:
-          <UnorderedList>
-            <ListItem>
-              Get an internship Iot
-            </ListItem>
-            <ListItem>
-              Build good relationships
-            </ListItem>
-            <ListItem>
-              Learn new skills
             </ListItem>
           </UnorderedList>
         </ListItem>

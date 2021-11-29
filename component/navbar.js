@@ -8,7 +8,7 @@ import ToggleTheme from './toggleTheme'
 
 const LinkItem = ({children , href, ...props}) => {
     return(
-        <NextLink href={href} passHref>
+        <NextLink href={href} >
             <Link p={2}
             {...props}
             >
@@ -19,10 +19,6 @@ const LinkItem = ({children , href, ...props}) => {
 }
 
 const Navbar = () => {
-    const [active, setActive] = useState(true)
-    const handleClick = () => {
-        setActive(!active)
-    }
     const bgNavbar = useColorModeValue('#ffffff40', '#20202380')
     const color = useColorModeValue('gray.900', 'gray.50')
     return (
@@ -42,29 +38,29 @@ const Navbar = () => {
             </Box>
             <Box display="flex" alignItems="center">
             <ToggleTheme/>
-            <Menu>
-            <MenuButton as={Button} display={{base:'flex', md: 'none'}} justifyContent="right" colorScheme={color} color="white" onClick={handleClick}  >{active ? <HamburgerIcon color={color} fontSize={24}/> : <CloseIcon color={color} fontSize={18}/>}</MenuButton>
+            <Menu isLazy id="navbar-menu">
+            <MenuButton as={Button} display={{base:'flex', md: 'none'}} justifyContent="right" colorScheme={color} color="white"  ><HamburgerIcon color={color} fontSize={24}/></MenuButton>
                 <MenuList >
-                    <MenuItem>
-                        <LinkItem href="/portfolio" style={{ fontSize:'22', margin: 12}} display={{base:'flex', md: 'none'}}>
+                    <NextLink href="/"  >
+                        <MenuItem as={Link}>
+                            About
+                        </MenuItem>
+                    </NextLink>
+                    <NextLink href="/portfolio"  >
+                        <MenuItem as={Link}>
                             Portfolio
-                        </LinkItem>
-                    </MenuItem>
-                    <MenuItem>
-                        <LinkItem href="/blog" style={{ fontSize:'22', margin: 12}} display={{base:'flex', md: 'none'}}>
+                        </MenuItem>
+                    </NextLink>
+                    <NextLink href="/blog"  >
+                        <MenuItem as={Link}>
                             Blog
-                        </LinkItem>
-                    </MenuItem>
-                    <MenuItem>
-                        <LinkItem href="/works" style={{ fontSize:'22', margin: 12}} display={{base:'flex', md: 'none'}}>
+                        </MenuItem>
+                    </NextLink>
+                    <NextLink href="/works"  >
+                    <MenuItem as={Link}>
                             Works
-                        </LinkItem>
                     </MenuItem>
-                    <MenuItem>
-                        <LinkItem href="/blog" style={{ fontSize:'22', margin: 12}} display={{base:'flex', md: 'none'}}>
-                            View source code
-                        </LinkItem>
-                    </MenuItem>
+                    </NextLink>
                 </MenuList>
             </Menu>
             </Box>

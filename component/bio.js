@@ -28,7 +28,7 @@ const Bio = () => {
         <BioYear>2020</BioYear>Admission to cryptographic engineering academy(Học Viện Kỹ Thuật Mật Mã)
       </BioSection>
       <BioSection>
-        <BioYear>2020 to present</BioYear>Freelancing and studying at cryptographic engineering academy(Học Viện Kỹ Thuật Mật Mã)
+        <BioYear>2020 to present</BioYear>Freelance and studying at cryptographic engineering academy(Học Viện Kỹ Thuật Mật Mã)
       </BioSection>
     </Box>
   )
