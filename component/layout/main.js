@@ -9,7 +9,7 @@ const Main = ({children, router}) => {
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
                 <title>Phuong Nguyen - Homepage</title>
                <style>
-                @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&family=PT+Sans:ital@0;1&family=Signika:wght@500&family=Yellowtail&display=swap');
+                @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Hind:wght@300;400;500&family=PT+Sans:ital@0;1&family=Signika:wght@500&family=Yellowtail&display=swap');
                 </style>
             </Head>
             <Navbar/>
