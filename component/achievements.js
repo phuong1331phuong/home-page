@@ -11,9 +11,11 @@ const Work = () => {
                 over the years I have had certain achievements that I can add to my portfolio.<br/> See them here:
             </Text>
             <Text></Text>
-            <Button mt="12px" colorScheme='teal' bg={colorButton} size='sm'>
-                <NextLink href="/portfolio">My portfolio</NextLink>
+            <NextLink href="/portfolio">
+            <Button mt="12px" colorScheme='blue' bg={colorButton} size='sm'>
+                My portfolio
             </Button>
+            </NextLink>
         </Box>
     )
 

@@ -38,10 +38,8 @@ const Footer = () => {
         </ListItem>
       </List>
       </Box >
-      <Box maxW="sm">
-      <Image src="/ScientificComputing.png" alt="Scientific Computing with Python" borderRadius="4px" mt="26px"/>
-      <Center >Scientific Computing with Python</Center>
-      </Box>
+      <Text align="center" opacity="0.5" fontSize="14px" mt="14px">designed by me</Text>
+      <Text align="center" opacity="0.4" fontSize="12px" >This website is my first product,<br/> improved and used until now</Text>
       </Container>
     </Box>
   )

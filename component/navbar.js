@@ -1,8 +1,7 @@
 import { Box, Container, Menu, MenuButton, MenuList,MenuItem, Button, useColorModeValue, Link} from "@chakra-ui/react"
 import Logo from './logo'
 import NextLink from 'next/link'
-import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons"
-import {useState} from 'react'
+import {  HamburgerIcon } from "@chakra-ui/icons"
 import ToggleTheme from './toggleTheme'
 
 
@@ -23,17 +22,17 @@ const Navbar = () => {
     const color = useColorModeValue('gray.900', 'gray.50')
     return (
         <Box position="fixed" w="100%" bg={bgNavbar}>
-        <Container display="flex" alignItems="center" p={2} maxW="container.md" mx="auto" justifyContent="space-between">
+        <Container display="flex" alignItems="center" p={2} maxW="container.xl" mx="auto" justifyContent="space-between">
             <Logo flex={1}/>
             <Box display={{base:'none', md: 'flex'}} justifyContent="space-around">
                 <LinkItem href="/portfolio" style={{ fontSize:'22', margin: 12}}>
                     Portfolio
                 </LinkItem>
+                <LinkItem href="/document" style={{ fontSize:'22', margin: 12}}>
+                    Document
+                </LinkItem>
                 <LinkItem href="/blog" style={{ fontSize:'22', margin: 12}}>
                     Blog
-                </LinkItem>
-                <LinkItem href="/works" style={{ fontSize:'22', margin: 12}}>
-                    Works
                 </LinkItem>
             </Box>
             <Box display="flex" alignItems="center">
@@ -51,15 +50,15 @@ const Navbar = () => {
                             Portfolio
                         </MenuItem>
                     </NextLink>
+                    <NextLink href="/document"  >
+                    <MenuItem as={Link}>
+                            Document
+                    </MenuItem>
+                    </NextLink>
                     <NextLink href="/blog"  >
                         <MenuItem as={Link}>
                             Blog
                         </MenuItem>
-                    </NextLink>
-                    <NextLink href="/works"  >
-                    <MenuItem as={Link}>
-                            Works
-                    </MenuItem>
                     </NextLink>
                 </MenuList>
             </Menu>

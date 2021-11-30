@@ -4,9 +4,12 @@ import Information from '../component/infomation'
 import Target from "../component/target"
 import Achievements from '../component/achievements'
 import Skill from '../component/skill'
+import Layout from '../component/layout/article'
+
 
 const HomePage = () => {
   return(
+    <Layout>
     <Container>
       <Information/>
       {/* <Box borderRadius="lg" bg="red" p={3} mb={6} align='center'>
@@ -17,6 +20,7 @@ const HomePage = () => {
       <Bio/>
       <Achievements/>
     </Container>
+    </Layout>
   )
 }
 

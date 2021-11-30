@@ -14,6 +14,7 @@ const Main = ({children, router}) => {
                 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@1,500&family=Hind:wght@300;400;500&family=PT+Sans:ital@0;1&family=Signika:wght@500&family=Yellowtail&display=swap');
                 </style>
             </Head>
+            
             <Navbar/>
             <Container maxW="container.sm" mx="auto" pt={14}>
                 {children}
