@@ -11,7 +11,7 @@ const Information = () => {
                 <Text color="gray.100">Hello, I'm a student of cryptographic engineering academy majoring in electronics and telecommunications.(AI engineer/ IOT developer/ Web developer).</Text>
             </Box>
             <Box marginBottom="36px" w="full" display="flex" justifyContent="center">
-                <Image src="https://scontent.fhph1-1.fna.fbcdn.net/v/t39.30808-6/257159268_382804413569091_7558770146122545980_n.jpg?_nc_cat=100&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=BOEktubfHfYAX-b-Jvp&_nc_ht=scontent.fhph1-1.fna&oh=40d1c6078826d30cf63c7e89d994ccdf&oe=61A782BE"
+                <Image src="/avatar.jpg"
                 borderRadius="50%"
                 width={150}
                 height={150}
