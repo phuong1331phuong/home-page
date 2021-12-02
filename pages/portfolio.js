@@ -1,12 +1,13 @@
 import { Box , Heading } from "@chakra-ui/react"
 import ImageAchievement from '../component/imageAchievement'
 import Layout from '../component/layout/article'
+import {motion} from 'framer-motion'
+
 
 
 const Portfolio = () => {
   return (
-    <Layout>
-
+<Layout>
     <Box mt={14} >
       <Heading ml="8px" fontSize="20px">My portfolio</Heading>  
     <Box mt={14} mb={8} display={{base:'', md:"flex"}} flexWrap="wrap" align="center">

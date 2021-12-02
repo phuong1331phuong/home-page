@@ -7,7 +7,7 @@ import { FaFacebook, FaInstagram, FaLinkedinIn, FaGithub } from "react-icons/fa"
 const Footer = () => {
   return (
     <Box maxW="full" marginBottom="50px">
-      <Container maxW="lg" pt={8} >
+      <Container maxW="container.md" pt={8} >
       <Heading fontSize="20px" >
         On the web
       </Heading>
@@ -37,6 +37,7 @@ const Footer = () => {
                         </Link>
         </ListItem>
       </List>
+      
       </Box >
       <Text align="center" opacity="0.5" fontSize="14px" mt="14px">designed by me</Text>
       <Text align="center" opacity="0.4" fontSize="12px" >This website is my first product,<br/> improved and used until now</Text>

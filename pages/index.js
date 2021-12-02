@@ -10,11 +10,8 @@ import Layout from '../component/layout/article'
 const HomePage = () => {
   return(
     <Layout>
-    <Container>
+    <Container maxW="container.md">
       <Information/>
-      {/* <Box borderRadius="lg" bg="red" p={3} mb={6} align='center'>
-        <Text >I'm student of KMA</Text>
-      </Box> */}
       <Target/>
       <Skill/>
       <Bio/>

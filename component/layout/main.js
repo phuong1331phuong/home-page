@@ -16,7 +16,7 @@ const Main = ({children, router}) => {
             </Head>
             
             <Navbar/>
-            <Container maxW="container.sm" mx="auto" pt={14}>
+            <Container maxW="container.md" mx="auto" pt={14}>
                 {children}
             </Container>
             <Footer />
