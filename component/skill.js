@@ -18,6 +18,9 @@ const Skill = () => {
         C/C++<Progress value={50} colorScheme="gray"/>
       </ListItem>
       <ListItem>
+        Flutter<Progress value={55} colorScheme="gray"/>
+      </ListItem>
+      <ListItem>
         English(IELTS)<Progress value={30} colorScheme="gray"/>
       </ListItem>
       <ListItem>

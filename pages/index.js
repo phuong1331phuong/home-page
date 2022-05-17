@@ -1,4 +1,4 @@
-import { Text, Box, Container } from "@chakra-ui/react"
+import {  Container } from "@chakra-ui/react"
 import Bio from "../component/bio"
 import Information from '../component/infomation'
 import Target from "../component/target"
